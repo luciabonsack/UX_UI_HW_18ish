@@ -19,8 +19,9 @@ p {
     font-size: 1.7vmin;
     font-style: normal;
     font-weight: 400;
-/*     line-height: normal; */
+
 }
+
 
 h1 {
     color: var(--Tangerine, #FFBB25);
@@ -99,6 +100,26 @@ h3 {
 
 #speci {
     grid-area: spec;
+}
+
+.eyeAni {
+
+}
+
+.hiddenSpec {
+    display: none;
+}
+
+#cPs p {
+    color: #55534C;
+}
+
+#uXr p {
+    color: #55534C;
+}
+
+#vC p {
+    color: #55534C 
 }
 
 ul {
@@ -235,9 +256,12 @@ h4 {
 
 .triBreakIcons {
     grid-area: tri;
+    display: none;
     display: flex;
     justify-content: space-between;
     margin: 40px;
+    animation: ;
+
 }
 
 .triBreakIcons img {
@@ -308,8 +332,11 @@ h4 {
     align-items: start;
 }
 
+
 .csText p {
     margin: 0;
+    text-decoration: dashed;
+    text-decoration-color:#AEAEAE;
 }
 
 #txt1 {
