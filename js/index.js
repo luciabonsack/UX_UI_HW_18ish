@@ -19,8 +19,20 @@ $("p").on({
     },
   });
 
-  $(".eyeAni").click(function(){
+  $("#about").hover(function(){
     $("#cPs").fadeIn();
     $("#uXr").fadeIn("slow");
     $("#vC").fadeIn(3000);
+  });
+
+  $("#cs1").hover(function(){
+    $("#txt11").fadeIn();
+  });
+
+  $("#cs3").hover(function(){
+    $("#txt22").fadeIn();
+  });
+
+  $("#cs4").hover(function(){
+    $("#txt33").fadeIn();
   });
