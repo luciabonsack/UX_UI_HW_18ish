@@ -29,7 +29,7 @@ h1 {
     font-size: var(--H1, 5vw);
     font-style: normal;
     font-weight: 400;
-    line-height: 80%; /* 96px */
+/*     line-height: 80%; /* 96px */ 
     text-align: center;
 }
 
@@ -64,6 +64,8 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     grid-template-areas: "hello name name name name ending ending ending ending ending ending ending";
+    padding-top: 6vh;
+    padding-bottom: 3vh;
 }
 
 #greeting p {
@@ -81,6 +83,7 @@ h3 {
     grid-area: name;
     justify-self: center;
     align-content: center;
+    height: fit-content;
 }
 
 #gr3 {
@@ -106,25 +109,32 @@ h3 {
 
 }
 
-.hiddenSpec {
-    display: none;
+#speci h3 {
+    padding-bottom: 1vh;
 }
 
-#cPs p {
+.hiddenSpec {
+    display: none;
+    padding-left: 2vh;
+}
+
+.hiddenSpec p {
+    font-size: 1.7vmin;
     color: #55534C;
-    font-size: 1.6vmin;
+}
+
+/* #cPs p {
+    color: #55534C;
     
 }
 
 #uXr p {
     color: #55534C;
-    font-size: 1.6vmin;
 }
 
 #vC p {
     color: #55534C; 
-    font-size: 1.6vmin;
-}
+} */
 
 ul {
     display: flex;
@@ -265,39 +275,36 @@ h4 {
     display: flex;
     justify-content: space-between;
     margin: 40px;
-    animation: ;
-
 }
 
 .triBreakIcons img {
     padding: 0px;
-    opacity: 40%;
+    opacity: 90%;
 }
 
 #work {
 /*     width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20% 60% 10% 10%;
+    grid-template-rows: 12% 63% 25%;
     column-gap: 16px;
     row-gap: 10px;
     grid-template-areas: "title title title title title title . . . . . ."
      "cs1 cs1 cs2 cs2 cs3 cs3 cs4 cs4 cs5 cs5 cs6 cs6"
-     "txt1 txt1 . . txt2 txt2 . . txt3 txt3 . ."
-     "txt11 txt11 . . txt22 txt22 . . txt33 txt33 . .";
+     "txt11 txt11 txt11 txt11 txt22 txt22 txt22 txt22 txt33 txt33 txt33 txt33";
      height: 48vh;
 }
 
 #workTitle {
     grid-area: title;
-
- 
 }
 
 .caseStudies {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: fit-content;
+    overflow-x: auto;
 }
 
 .caseStudies img {
@@ -306,6 +313,10 @@ h4 {
     padding: 15px;
     align-self: flex-start;
 }
+
+/* .textDoor img {
+    height: 140%;
+} */
 
 #cs1 {
     grid-area: cs1;
@@ -338,7 +349,7 @@ h4 {
 .csText {
     justify-self: center;
     text-align: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 
@@ -356,7 +367,7 @@ h4 {
 
 #txt11 {
     grid-area: txt11;
-    display: none;
+    display: flex;
 }
 
 #txt2 {
@@ -366,7 +377,7 @@ h4 {
 
 #txt22 {
     grid-area: txt22;
-    display: none;
+    display: flex;
 }
 
 #txt3 {
@@ -375,11 +386,11 @@ h4 {
 
 #txt33 {
     grid-area: txt33;
-    display: none;
+    display: flex;
 }
 
 .csTextHide p {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     color: #55534C;
 }
 
@@ -389,7 +400,7 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 16px;
     grid-template-areas: "triangle1 . . star1 cunifText cunifText cunifText cunifText star2 . . triangle2";
-    margin-top: 3vh;
+/*     margin-top: 3vh; */
     margin-bottom: 3vh;
 }
 
@@ -400,10 +411,10 @@ h4 {
 }
 
 .breakStar img {
-    width: 40%;
-    height: 60%;
+    width: 90%;
+    height: auto;
     padding: 20px;
-    align-self: end;
+/*     align-self: end; */
     opacity: 30%;
 }
 
@@ -421,6 +432,7 @@ h4 {
 
 #cuniText {
     grid-area: cunifText;
+    rotate: 180deg;
 }
 
 #cuniText img {
@@ -505,4 +517,37 @@ justify-content: space-between;
 .extIcon img {
     height: 2vh;
     width: auto;
+}
+
+.biggerFont p{
+    font-size: 2vmin;
+}
+
+.brighterFont p {
+    color: antiquewhite;
+}
+
+.myButton {
+    color: #FFBB25;
+    border-color: #D8D2C3;
+    font-family: Bellefair;
+    font-size: 2vh;
+    background-color: black;
+}
+
+.myButton:hover {
+    background-color: #FFBB25;
+    color: black;
+    border-color: #b69b58;
+}
+
+.myButton:active {
+    background-color: #AEAEAE;
+    color: black;
+    border-color: #b69b58;
+}
+
+#buttonAlign {
+    position: fixed;
+    right: 0;
 }
